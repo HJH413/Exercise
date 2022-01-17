@@ -15,7 +15,7 @@ public class Ex03_StringBuffer {
         System.out.println("1>"+a); // Hello홍길동
     }
 }
-
+// 7 8 9 14 15 9 10 11 end
 /*
 
 	자바에서 문자열처리 클래스
