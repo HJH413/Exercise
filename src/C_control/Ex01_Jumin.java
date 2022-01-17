@@ -4,7 +4,19 @@ public class Ex01_Jumin {
     public static void main(String[] args) {
         //프로그래밍언어에서 숫자는 0부터시작함
         String id = "940413-1244657";
-        char sung = id.charAt(7);
+
+        String idYearDay = id.substring(0,6);  // 몇 번째 부터 몇 번까지
+        System.out.println("년월일: " + idYearDay);
+        //월과 일 출력하게
+        String idMonth = id.substring(2,4);
+        String idDay = id.substring(4,6);
+
+        System.out.println("월: "+idMonth);
+        System.out.println("일: "+idDay);
+
+
+
+        char sung = id.charAt(7); // 문자열에 몇 번째 문자 불려오기 0부터 시작
         System.out.println(sung);
 
         if(sung == '1' || sung == '3') {
