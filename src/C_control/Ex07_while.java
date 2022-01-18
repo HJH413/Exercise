@@ -25,8 +25,10 @@ public class Ex07_while {
         int sum = 0;
         while( true ){
             sum += n;
-            if ( n++   ==  10 ) break;  // >= or ==      크거나같다 or 같다
+            if ( n++   >=  10 ) break;  // >= or ==      크거나같다 or 같다
         }
         System.out.println("SUM = " + sum );
+
+
     }
 }
