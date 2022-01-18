@@ -3,7 +3,7 @@ package D_array;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Ex01 {
+public class Ex01_성적 {
 
     public static void main(String[] args) {
 //      int kor; 하나만저장
