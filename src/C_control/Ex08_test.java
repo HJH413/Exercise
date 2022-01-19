@@ -13,23 +13,37 @@ import java.util.Scanner;
 
 public class Ex08_test {
     public static void main(String[] args) {
-        System.out.println("자연수를 입력하면 1~ n 사이의 8의 갯수를 셉니다.");
-        Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
         int count = 0;
-        for (int i = 0; i < n ; i++) {
+        for (int i = 0; i < 10000; i++) {
             int num = i;
             while (num != 0) {
-                if(num%10==8){
+                if (num%10 == 8) {
                     count++;
                 }
                 num = num/10;
             }
         }
-        System.out.println("1~n 사이의 8의 갯수 : " + count);
-
+        System.out.println(count);
     }
 }
+
+/*
+System.out.println("자연수를 입력하면 1~ n 사이의 8의 갯수를 셉니다.");
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int count = 0;
+        for (int i = 0; i < n ; i++) {
+        int num = i;
+        while (num != 0) {
+        if(num%10==8){
+        count++;
+        }
+        num = num/10;
+        }
+        }
+        System.out.println("1~n 사이의 8의 갯수 : " + count);
+*/
+
 
     /*int count = 0;  // 1~10000중 8이 나오면 저장할 곳
         for (int i = 0; i < 10000 ; i++) { // 범위 설정
